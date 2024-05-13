@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Music</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Galeri Musik</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="galleryfoto.html">foto</a>
+                        <a href="galleryvideo.html">video</a>
+                        <a href="gallerymusic.html">music</a>
+                    </div>
+                    <li><a href="about_me.html">about me</a></li>
+                    <li><a href="form.html">formulir</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Kotak Saran</h2>
+    <form action="/submit_form.php" method="post">
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+    </main>
+    <footer>
+        <p>tugas 10 PDW_20220140096</p>
+    </footer>
+</body>
+</html>
